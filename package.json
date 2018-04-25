@@ -1,0 +1,27 @@
+{
+  "name": "mmog",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "node ./src/server/server.js",
+    "dev": "webpack && npm start"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-hot-middleware": "^2.22.0"
+  },
+  "dependencies": {
+    "circular-json": "^0.5.3",
+    "express": "^4.16.3",
+    "json-bufferify": "^0.1.2",
+    "matter-js": "^0.14.1",
+    "node-serialize": "0.0.4",
+    "socket.io": "^2.1.0"
+  }
+}
